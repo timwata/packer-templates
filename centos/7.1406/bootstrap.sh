@@ -6,3 +6,5 @@ yes | sudo sh /mnt/VBoxLinuxAdditions.run
 sudo umount /mnt
 sudo /etc/init.d/vboxadd setup
 rm /home/vagrant/VBoxGuestAdditions.iso
+sudo yum clean all
+sudo rm -rf /var/cache/yum
