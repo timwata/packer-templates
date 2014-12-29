@@ -1,7 +1,9 @@
 .PHONY: box clean clean-all
 
-box:
-	packer build template.json
+box: virtualbox
+
+virtualbox:
+	packer build virtualbox.json
 
 clean:
 	-rm *.box
