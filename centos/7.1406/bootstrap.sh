@@ -8,3 +8,5 @@ sudo /etc/init.d/vboxadd setup
 rm /home/vagrant/VBoxGuestAdditions.iso
 sudo yum clean all
 sudo rm -rf /var/cache/yum
+sudo dd if=/dev/zero of=/EMPTY bs=1M
+sudo rm -rf /EMPTY
